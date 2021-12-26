@@ -5,7 +5,7 @@ from sklearn.metrics import mean_squared_error as MSE
 from sklearn.model_selection import KFold
 from lightgbm import LGBMRegressor
 
-from logger import *
+from util import timer
 from typing import Callable
 
 def fit_lgbm(X, y, params:dict=None, fit_params:dict=None, cv:list=None, metric:Callable=MSE):
