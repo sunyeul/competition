@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 
 from sklearn.metrics import mean_squared_error as MSE
+from sklearn.model_selection import KFold
 from lightgbm import LGBMRegressor
 
 from logger import *
